@@ -1,0 +1,123 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{amsfonts,amsthm}
+\usepackage[pdftex]{graphicx}
+\usepackage[svgnames]{xcolor}
+\usepackage[top=2.5cm,left=2.5cm,right=2.5cm,bottom=2.5cm]{geometry}
+  \textheight=700px
+
+\usepackage{multicol}
+
+% Accents %
+\usepackage{url}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+
+\frenchspacing
+\pagestyle{empty}
+\setlist[itemize]{leftmargin=*}
+
+\newcommand{\breakvspace}[1]{\pagebreak[2]\vspace{#1}\pagebreak[2]}
+\newcommand{\nobreakvspace}[1]{\nopagebreak[4]\vspace{#1}\nopagebreak[4]}
+\newcommand{\spacedhrule}[2]{\breakvspace{#1}\hrule\nobreakvspace{#2}}
+
+\newcommand{\maintitle}[1]{\noindent{\LARGE \textbf{#1}}}
+
+
+
+\begin{document}
+
+
+\maintitle{Clément Hussenot-Desenonges | Curriculum Vitae}
+
+\spacedhrule{1em}{1em}
+
+\begin{multicols}{2}
+  \section*{État Civil}
+    Nom de famille : HUSSENOT-DESENONGES\\
+    Prénoms : Clément Marie Coton\\
+    Situation de famille : célibataire\\
+    Nationnalité : française\\
+    Âge : 36
+  \section*{Coordonnées}
+    Téléphone : 0033 (0) 6167 72183 \\
+    Email : chussenot@gmail.com\\
+    Adresse : 11 rue des Sablons, Paris 75116
+\end{multicols}
+
+
+\spacedhrule{0.5em}{-0.4em}
+
+
+\section*{Connaissances}
+  \begin{minipage}[t]{0.29\textwidth}
+    \subsection*{Informatique, web}
+    Ruby, Rack, Sinatra, Rails\\
+    Elixir, Phoenix, Docker \\
+    Consul, Terraform, AWS \\
+    Ansible, Capistrano \\
+    HTML5, HAML, CSS3 \\
+    SASS, JS, Node
+  \end{minipage}
+  \hspace{0.035\textwidth}
+  \vrule
+  \hspace{0.035\textwidth}
+  \begin{minipage}[t]{0.28\textwidth}
+    \subsection*{Informatique, général}
+    Git, Vim\\
+    Systèmes *nix, bash, zsh\\
+    Markdown, TDD, CI, CD\\
+    Méthodes Agile \\
+    Microsoft Office Suite\\
+  \end{minipage}
+  \hspace{0.035\textwidth}
+  \vrule
+  \hspace{0.035\textwidth}
+  \begin{minipage}[t]{0.28\textwidth}
+    \subsection*{Langues}
+    \textbf{Français} (natif)\\
+    \textbf{Anglais} (courant)\\
+    \textbf{Italien} (notions)
+  \end{minipage}
+
+
+\spacedhrule{1.5em}{-0.4em}
+
+\section*{Expérience professionnelle}
+
+  \begin{itemize}
+    \item[--]
+      \textbf{CTO} – Praditus (France) : juin 2014 - septembre 2016\\
+      \textit{Praditus est une solution pour les professionnels des RH s'appuyant sur de la psychométrie avancée. CTO chez Praditus, j'ai été responsable de la feuille de route produit, l'architecture de la plate-forme et la sécurité, la gestion de l'équipe technique.}
+    \item[--]
+      \textbf{Senior Developer} – af83 (France) : mai 2012 – mars 2014\\
+      \textit{af83 est une agence d'innovation avec des bureaux à Paris et à San Francisco, spécialisée dans le design d'expérience, la technologie et la stratégie numérique. \\}
+      \textit{J'ai travaillé en étroite collaboration avec la force de vente et l'équipe projet. \\}
+      \textit{Clients : Europe 1, Mon Album Photo, SFR, ADAGP, CISAC, Ijenko, Suez, Chopard}
+    \item[--]
+      \textbf{Web Developer and Owner} – Emeth Animation (France) : décembre 2005 - février 2012\\
+      \textit{Clients : Areva, General Electric, LVMH, Axa, Generali}
+    \item[--]
+      \textbf{Freelance Developer} décembre 2002 - novembre 2005\\
+      \textit{Accenture, SQLI, Mazarine Digital, La Chose}
+    \item[--]
+      \textbf{Motion Designer and Web Developer} - Abaque Micro - septembre 2000 - novembre 2002\\
+      \textit{}
+  \end{itemize}
+
+
+\spacedhrule{0.5em}{-0.4em}
+
+\section*{Formation}
+
+\begin{itemize}
+  \item[--] \textbf{Assistant Réalisateur Multimedia}, CFT Gobelins (1999-2000)
+  \item[--] \textbf{Arts plastiques}, Université Paris Nord (1998)
+  \item[--] \textbf{BAC S}, La Rochelle - Dautet (1997)
+\end{itemize}
+
+\spacedhrule{0.5em}{-0.4em}
+
+\end{document}
