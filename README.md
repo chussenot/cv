@@ -26,7 +26,7 @@ Connaissances
 Informatique, web
 -----------------
 
-Ruby, Rack, Sinatra, Rails  
+Crystal, Ruby, Rack, Sinatra, Rails  
 Elixir, Phoenix, Docker  
 Consul, Terraform, AWS  
 Ansible, Capistrano  
