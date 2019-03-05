@@ -1,0 +1,11 @@
+sudo: false
+
+language: c
+
+services:
+    - docker
+
+script:
+  - docker run -v `pwd`:/source jagregory/pandoc -f latex -t latex cv.tex -o cv-release.pdf
+  - ls
+
