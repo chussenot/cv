@@ -4,3 +4,5 @@ help: ## Show this help.
 pdf: ## Convert to .pdf
 	pdflatex cv.tex
 	pdflatex cv-full.tex
+
+.PHONY: help pdf
