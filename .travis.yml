@@ -1,14 +1,22 @@
 sudo: false
 language: c
+
 services:
 - docker
+
+cache:
+  directories:
+    - build
+
 script:
-- docker run -v `pwd`:/source jagregory/pandoc -f latex -t latex cv.tex -o cv-release.pdf
-- ls
+  - docker run -v `pwd`:/source jagregory/pandoc -f latex -t latex cv.tex -o cv-release.pdf
+  - mkdir -p build
+  - mv cv-release.pdf build/
+
 deploy:
   provider: releases
   api_key:
     secure: ql8b+F7WWM4cvsW1lzIlKH8RjPnoFbMzYfB/6wCZrRoRpDLdqjx0FfnF0K0QDIUqZ/ozK23yhCBK+XwQ2s2Po+N3lolRXQ1VUkVPouboFoosErohd8ujbDYE8TutyetbNoBUEtsco/ueQ9XFqMsshZlzlRON75gOQv24aOydrYMpPsmiK5PIqFpgdf07ffv7zXEdhi5586q/Fk3Ezro+yaSzh4CRmrRLOn4P+yD9dg4Qn1hStNztE2KunAN/MzGAti27H+qgFEwBXEbVk+Pg+ZCZh8Rzuwz6t8H0i8qqF1OSQnWtRkX0/nDLgVkJrNs9+hrtP/0fIqT5VQIhG9CxCJxIktYevlAik2euqxScnz4fzxtHyOckia4AEMeUDEtM71g6dSoLK2Qg+RebCLytwbgr+myZ6wMsdv04f9A27/sCLnfDpoE014iFhucDJ8Ela+o7lRKrByn4kCDpKgB+idQ0lxSzkg1vlCXclt0pUIARuqjVPmjzYivySpJQo7MvI07/EtOjb8eE0qQSl2CDkQAZOTllsG07oL58OWxGmWgekeR8ssp9aaDpgjGn9U2u/T+VIgzF8eVSq51XVF5T0lM8LRuTCklfTJXkzdbGHQ75OUdewMqtquUtfYSQOyIaicXp/y3rEZjw0cJaaWmLtt8pJKACg8u+cSlkxiOfgfk=
-  file: cv-release.pdf
+  file: build/cv-release.pdf
   on:
     repo: chussenot/cv
