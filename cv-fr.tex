@@ -1,0 +1,120 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{amsfonts,amsthm}
+\usepackage[pdftex]{graphicx}
+\usepackage[svgnames]{xcolor}
+\usepackage[top=2.5cm,left=2.5cm,right=2.5cm,bottom=2.5cm]{geometry}
+  \textheight=700px
+
+\usepackage{multicol}
+
+% Accents %
+\usepackage{url}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+
+\frenchspacing
+\pagestyle{empty}
+\setlist[itemize]{leftmargin=*}
+
+\newcommand{\breakvspace}[1]{\pagebreak[2]\vspace{#1}\pagebreak[2]}
+\newcommand{\nobreakvspace}[1]{\nopagebreak[4]\vspace{#1}\nopagebreak[4]}
+\newcommand{\spacedhrule}[2]{\breakvspace{#1}\hrule\nobreakvspace{#2}}
+\newcommand{\maintitle}[1]{\noindent{\LARGE \textbf{#1}}}
+
+\begin{document}
+
+
+\maintitle{Clément Hussenot-Desenonges | Curriculum Vitae}
+
+\spacedhrule{1em}{1em}
+
+\begin{multicols}{2}
+  \section*{État Civil}
+    Nom de famille : HUSSENOT-DESENONGES\\
+    Prénoms : Clément Marie Coton\\
+    Situation de famille : célibataire\\
+    Nationnalité : française\\
+    Âge : 39
+  \section*{Coordonnées}
+    Téléphone : 0033 (0) 6167 72183 \\
+    Email : chussenot@gmail.com\\
+    Adresse : 11 rue des Sablons, Paris 75116
+\end{multicols}
+
+\spacedhrule{0.5em}{-0.4em}
+
+\section*{Connaissances}
+  \begin{minipage}[t]{0.29\textwidth}
+    \subsection*{Informatique, web}
+    Shell Script, Python, Ruby (Rack, Sinatra, Rails), Elixir, Phoenix, Docker, Orchestration de Containers, Consul, Vault, Terraform, Nomad, AWS, Ansible, Capistrano, HTML5, HAML, CSS3, SASS, JS, Node, entr(1), rbenv, tfenv, direnv, tgenv
+  \end{minipage}
+  \hspace{0.035\textwidth}
+  \vrule
+  \hspace{0.035\textwidth}
+  \begin{minipage}[t]{0.28\textwidth}
+    \subsection*{Informatique, général}
+    Git, Vim, Tmux\\
+    Systèmes Linux, BSD\\
+    Markdown, TDD, CI, CD\\
+    Méthodes Agile \\
+    Cloud Publique (AWS, GCP) \\
+  \end{minipage}
+  \hspace{0.035\textwidth}
+  \vrule
+  \hspace{0.035\textwidth}
+  \begin{minipage}[t]{0.28\textwidth}
+    \subsection*{Langues}
+    \textbf{Français} (natif)\\
+    \textbf{Anglais} (courant)\\
+    \textbf{Italien} (notions)
+  \end{minipage}
+
+
+\spacedhrule{1.5em}{-0.4em}
+
+\section*{Expérience professionnelle}
+
+  \begin{itemize}
+    \item[--]
+      \textbf{Lead SRE} – Vente Privee / Veepee (France) : juillet 2018 - mars 2019\\
+      \textit{Le groupe vente-privee regroupe différentes marques européennes, composées de 6000 employés, sous un même nom: Veepee. Magasin en ligne multi-spécialiste avec des univers distincts pour la mode, la maison, les voyages, le sport, la beauté, les enfants, la restauration et le divertissement. Lead SRE chez Veepee, En tant que Site Reliability Engineer, j'ai travaillé avec une petite equipe de 4 personnes pour les produits de domaines suivant, B2B, BI, datascience, RH. Nous avons eu pour charge de gerer la construction des infrastructures et services (Kafka, Talend, RabbitMQ, Postgres), l'administration serveurs et la gestion des incidents sur les differantes applications des produits.}
+    \item[--]
+      \textbf{Consultant Cloud et Automation} – D2SI (France) : janvier 2017\\
+      \textit{D2SI est un cabinet de conseil IT dont la spécialité est l'Automation et plus spécifiquement du conseil dans la statégie Devops, le Cloud public, l'intégration continue, le déploiement et la livraison continue d'applications. Consultant chez D2SI, j'ai travaillé pour de nombreux clients, notamment pour Neovia, Veolia, Renault et Renault Digital. Lead Ops sur le compte Renault Digital, j'ai travaillé sur la constitution d'une équipe technique en charge des opérations IT d'un peu plus de 10 personnes en gerant une migration massive des applications du groupe sur AWS.}
+    \item[--]
+      \textbf{CTO} – Praditus (France) : juin 2014 - septembre 2016\\
+      \textit{Praditus est une solution pour les professionnels des RH s'appuyant sur de la psychométrie avancée. CTO chez Praditus, j'ai été responsable de la feuille de route produit, l'architecture de la plate-forme et la sécurité, la gestion d'une l'équipe technique d'environ 5 personnes. La stack technique, Ruby, Elixir, ClojureScript etant deploye via des pipelines Circle CI vers un orchestateur de containers sur AWS (ECR)}
+    \item[--]
+      \textbf{Senior Developer} – af83 (France) : mai 2012 – mars 2014\\
+      \textit{af83 est une agence d'innovation avec des bureaux à Paris et à San Francisco, spécialisée dans le design d'expérience, la technologie et la stratégie numérique. \\}
+      \textit{J'ai travaillé en étroite collaboration avec la force de vente et l'équipe projet. \\}
+      \textit{Clients : Europe 1, Mon Album Photo, SFR, ADAGP, CISAC, Ijenko, Suez, Chopard}
+    \item[--]
+      \textbf{Web Developer and Owner} – Emeth Animation (France) : décembre 2005 - février 2012\\
+      \textit{Clients : Areva, General Electric, LVMH, Axa, Generali}
+    \item[--]
+      \textbf{Freelance Developer} décembre 2002 - novembre 2005\\
+      \textit{Accenture, SQLI, Mazarine Digital, La Chose}
+    \item[--]
+      \textbf{Motion Designer and Web Developer} - Abaque Micro - septembre 2000 - novembre 2002\\
+      \textit{}
+  \end{itemize}
+
+
+\spacedhrule{0.5em}{-0.4em}
+
+\section*{Formation}
+
+\begin{itemize}
+  \item[--] \textbf{Assistant Réalisateur Multimedia}, CFT Gobelins (1999-2000)
+  \item[--] \textbf{Arts plastiques}, Université Paris Nord (1998)
+  \item[--] \textbf{BAC S}, La Rochelle - Dautet (1997)
+\end{itemize}
+
+\spacedhrule{0.5em}{-0.4em}
+
+\end{document}
+
